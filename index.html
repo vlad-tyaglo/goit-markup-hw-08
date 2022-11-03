@@ -21,6 +21,13 @@
               <li><a class="site-nav__link" href="">Контакти</a></li>
             </ul>
         </nav>
+
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-btn__icon" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
         <ul class="contacts">
               <li>
                 <a class="contacts__link" href="mailto:info@devstudio.com"> 
@@ -36,18 +43,49 @@
               </li>
         </ul>
     </div>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+
+      <button type="button" class="mobile-menu__close-btn" data-menu-close>
+        <svg class="mobile-menu__close-icon" width="40px" height="40px">
+          <use  href="./images/icons.svg#icon-close_mobile"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav">
+        <li><a class="mobile-nav__link" href="">Студія</a></li>
+        <li><a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="mobile-nav__link" href="">Контакти</a></li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li>
+          <a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="mobile-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li><a class="mobile-social__link" href="">Instagram</a></li>
+        <li><a class="mobile-social__link" href="">Twitter</a></li>
+        <li><a class="mobile-social__link" href="">Facebook</a></li>
+        <li><a class="mobile-social__link" href="">LinkedIn</a></li>
+      </ul>
+      </div>
+    </div>
   </header>
 
-  <main>
+  <!-- <main>
     <section class="hero">
       <div class="container">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
       </div>
-    </section>
+    </section> -->
     
     
-    <section class="section">
+    <!-- <section class="section">
       <div class="container">
         <h2 class="hidden-title">Наші переваги</h2>
         <ul class="specialty-list">
@@ -89,9 +127,9 @@
             </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   
-  <section class="section section_no-padding-top">
+  <!-- <section class="section section_no-padding-top">
     <div class="container">
         <h2 class="section__title">Чим ми займаємося</h2>
         <ul class="activity-list">
@@ -115,9 +153,9 @@
             </li>
         </ul>
     </div>
-  </section>
+  </section> -->
     
-  <section class="section section_other-background">
+  <!-- <section class="section section_other-background">
     <div class="container">
         <h2 class="section__title">Наша команда</h2>
         <ul class="team">
@@ -271,9 +309,9 @@
             </li>
         </ul>
     </div> 
-  </section>
+  </section> -->
   
-  <section class="section">
+  <!-- <section class="section">
     <div class="container">
     <h2 class="section__title">Постійні клієнти</h2>
     <ul class="company-list">
@@ -322,9 +360,9 @@
     </ul>
     </div>
   </section>
-  </main>
+  </main> -->
 
-  <footer class="basement">
+  <!-- <footer class="basement">
     <div class="container basement-container">
       <div class="basement-container-adress">
         <a class="basement-logo" href=""><span class="logo__accent">Web</span>Studio</a>
@@ -459,7 +497,8 @@
         <button type="submit" class="modal-form-submit">Відправити</button>
       </form>
     </div>
-  </div>
-  <script src="./js/modal.js"></script>
+  </div> -->
+  <script src="./js/mobile-menu.js"></script>
+  <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
