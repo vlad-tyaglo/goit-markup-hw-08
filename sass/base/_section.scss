@@ -1,0 +1,22 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section_no-padding-top {
+    padding-top: 0px;
+    padding-bottom: 94px;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section_other-background {
+    background-color: var(--button-background-color);
+} 

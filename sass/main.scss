@@ -1,0 +1,19 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './base/base';
+@import './base/container';
+@import './base/section';
+
+@import './components/title';
+@import './components/logo';
+@import './components/modal-window';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/speciality';
+@import './layout/activity';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/project';
+@import './layout/footer';
