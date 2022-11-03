@@ -1,4 +1,61 @@
 
+.specialty-list {
+    display: block;
+}
+
+.specialty-list__container {
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialty-list__icons {
+    width: 70px;
+    height: 70px;
+}
+
+.specialty-list__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.specialty-list__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--paragraph-text-color);
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .specialty-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .specialty-list__item {
+        width: 354px;
+    }
+
+    .specialty-list__title {
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
 
 .specialty-list {
     display: flex;
@@ -6,6 +63,8 @@
     justify-content: center;
     align-items: flex-start;
     column-gap: 30px;
+
+    flex-wrap: nowrap;
 }
 
 .specialty-list__container {
@@ -36,5 +95,43 @@
     line-height: 1.71;
     color: var(--paragraph-text-color);
     letter-spacing: 0.03em;
-    
 }
+}
+// .specialty-list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     align-items: flex-start;
+//     column-gap: 30px;
+// }
+
+// .specialty-list__container {
+//     background-color: #F5F4FA;
+//     margin-bottom: 30px;
+//     border-radius: 4px;
+//     height: 120px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .specialty-list__icons {
+//     width: 70px;
+//     height: 70px;
+// }
+
+// .specialty-list__title {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 10px;
+// }
+
+// .specialty-list__text {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     color: var(--paragraph-text-color);
+//     letter-spacing: 0.03em;
+    
+// }
