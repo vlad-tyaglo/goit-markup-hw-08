@@ -2,16 +2,7 @@
     background-color: var(--secondary-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.basement-container{
-    display: flex;
-    align-items: baseline;
-}
-
-.basement-container-adress {
-    margin-right: 70px;
-    flex-grow: 1;
+    text-align: center;
 }
 
 .basement-logo {
@@ -24,10 +15,6 @@
     color: var(--title-text-color);
     margin-bottom: 20px;
     display: inline-block;
-}
-
-.basement-adr-li{
-    margin-bottom: 9px;
 }
 
 .basement-adress {
@@ -43,13 +30,11 @@
     &:hover, 
     &:focus {
     color: var(--accent-color);
+    }
 }
 
-}
-
-
-.basement-cont-li{
-    margin-bottom: 9px;
+.basement-adr-li{
+    margin-bottom: 8px;
 }
 
 .basement-contact-mail {
@@ -68,7 +53,9 @@
 }
 }
 
-
+.basement-cont-li{
+    margin-bottom: 8px;
+}
 
 .basement-contact {
     font-size: 14px;
@@ -85,12 +72,6 @@
 }
 }
 
-
-
-.basement-container-social {
-    margin-right: 93px;
-}
-
 .plus-title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -99,6 +80,10 @@
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     text-transform: uppercase;
+}
+
+.basement-container-social {
+    margin-top: 60px;
 }
 
 .social-list-link-basement {
@@ -115,18 +100,12 @@
     &:focus {
     background-color: #2196F3;
 }
-
 }
-
 
 .social-icons-basement {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
-}
-
-.subscribe-besement {
-    width: 570px;
 }
 
 .subscribe-title {
@@ -140,12 +119,8 @@
     margin-bottom: 20px;
 }
 
-.subscrb-form {
-    display: flex;
-}
-
 .email-sbscribe {
-    width: 358px;
+    width: 100%;
     margin-right: 12px;
     padding-top: 15px;
     padding-left: 16px;
@@ -169,6 +144,9 @@
     align-items: center;
     column-gap: 10px;
     padding: 0px 0px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-text{
@@ -180,4 +158,65 @@
     color: var(--title-text-color);
 }
 
+.subscribe-besement {
+    margin-top: 60px;
+}
 
+@media screen and (min-width: 768px) {
+    .basement-container{
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subscribe-besement {
+        width: 450px;
+    }
+
+    .basement-container-adress {
+        margin-right: 165px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .basement {
+        text-align: left;
+    }
+    
+    .basement-container-adress {
+        margin-right: 70px;
+        flex-grow: 1;
+        flex-wrap: nowrap;
+    }
+
+    .subscribe-besement {
+        width: 570px;
+    }
+
+    .subscrb-form {
+        display: flex;
+    }
+
+    .basement-container-social {
+    margin-right: 93px;
+    margin-top: 0;
+    }
+
+    .subscribe-btn{
+        display: flex;
+        cursor: pointer;
+        background-color: var(--accent-color);
+        border-radius: 4px;
+        border: none;
+        width: 200px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        padding: 0px 28px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
