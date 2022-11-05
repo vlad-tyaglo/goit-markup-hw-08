@@ -77,8 +77,6 @@
 }
 }
 
-
-
 .project-container {
     background-color: var(--background-basic-color);
     padding-top: 20px;
@@ -108,16 +106,23 @@
 
 @media screen and (min-width: 768px) {
     
-    .navigation-list {
-        justify-content: center;
-        flex-wrap: nowrap;
-    }
 
-    .project-list{
-        column-gap: 30px;
-    }
 }
 
+@media screen and (min-width: 768px) {
+    
+    .project-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+        }
+
+        .navigation-list {
+           justify-content: center;
+        }
+}
 
 // .navigation-list {
 //     display: flex;

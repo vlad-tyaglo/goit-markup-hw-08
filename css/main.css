@@ -563,6 +563,10 @@ img {
 .mobile-social__link {
   text-decoration: none;
   color: #2196F3;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .hero {
@@ -999,12 +1003,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .project-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
   .navigation-list {
     justify-content: center;
-    flex-wrap: nowrap;
-  }
-  .project-list {
-    column-gap: 30px;
   }
 }
 .basement {
