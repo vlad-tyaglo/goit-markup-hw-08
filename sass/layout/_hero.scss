@@ -11,10 +11,22 @@
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
-        ), url(../images/back.jpg);
+        ), url(../images/mobile-header.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ), url(../images/mobile-header@2x.jpg);
+    }
 }
 
 .hero__title {
@@ -48,7 +60,24 @@
     .hero {
         max-width: 768px;
         height: 400px;
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ), url(../images/tablet-header.jpg);
+        }
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ), url(../images/tablet-header@2x.jpg);
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -57,10 +86,27 @@
         padding-bottom: 200px;
         max-width: 1600px;
         height: 600px;
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ), url(../images/back.jpg);
     }
 
     .hero__button {
         padding: 10px 32px;       
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ), url(../images/back@2x.jpg);
     }
 }
 
