@@ -145,16 +145,19 @@
     
     .project-list {
         display: flex;
-        align-items: center;
+        // align-items: center;
         flex-wrap: wrap;
         column-gap: 30px;
         row-gap: 30px;
         }
 
-        
-
         .project-list-item {
             width: calc((100% - 2 * 30px) / 3);
+            display: flex;
+        }
+
+        .project-container{
+            flex-grow: 0;
         }
 }
 

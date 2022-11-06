@@ -1069,13 +1069,16 @@ img {
 @media screen and (min-width: 1200px) {
   .project-list {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
   }
   .project-list-item {
     width: calc((100% - 60px) / 3);
+    display: flex;
+  }
+  .project-container {
+    flex-grow: 0;
   }
 }
 .basement {
