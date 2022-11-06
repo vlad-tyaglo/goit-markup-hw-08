@@ -499,6 +499,8 @@ img {
   height: 100%;
   padding-top: 48px;
   padding-bottom: 48px;
+  padding-left: 28px;
+  padding-right: 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
