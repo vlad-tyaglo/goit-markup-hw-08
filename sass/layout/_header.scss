@@ -1,6 +1,7 @@
 
 .page-header {
-    border-bottom: 1px solid #ECECEC;  
+    border-bottom: 1px solid #ECECEC;
+     
 }
 
 .site-nav {
@@ -24,6 +25,11 @@
     background-color: #FFFFFF;
 }
 
+@media screen and (max-width:767px) {
+    .page-header__container {
+        height: 60px; 
+    }
+}
 
 @media screen and (min-width:768px) {
     .site-nav {

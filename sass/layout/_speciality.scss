@@ -34,7 +34,7 @@
     letter-spacing: 0.03em;
 }
 
-.specialty-list__item {
+.specialty-list__item:not(:last-child) {
     margin-bottom: 30px;
 }
 
