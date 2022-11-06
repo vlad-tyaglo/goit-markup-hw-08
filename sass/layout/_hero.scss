@@ -2,7 +2,7 @@
 .hero {
         padding-top: 118px;
         padding-bottom: 118px;
-        max-width: 480px;
+        max-width: 1600px;
         height: 400px;
         margin-left: auto;
         margin-right: auto;
@@ -58,13 +58,16 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 @media screen and (min-width: 768px) {
     .hero {
-        max-width: 768px;
         height: 400px;
         background-image: linear-gradient(
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ), url(../images/tablet-header.jpg);
+        }
+
+        .hero__title {
+            width: 400px;
         }
 }
 
@@ -95,6 +98,12 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
     .hero__button {
         padding: 10px 32px;       
+    }
+
+    .hero__title {
+        font-size: 44px;
+        line-height: 1.4;
+        width: 700px;
     }
 }
 

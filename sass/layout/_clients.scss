@@ -9,7 +9,7 @@
 
 .company-list-item {
     height: 92px;
-    width: 210px;
+    width: calc((100% - 1 * 30px) / 2);
 }
 
 .company-icons {

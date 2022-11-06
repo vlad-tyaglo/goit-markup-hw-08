@@ -64,9 +64,15 @@
         }
     }
 
-    .site-nav__link_active::after{
-        opacity: 1;
+    .site-nav__link_active {
+        color: var(--accent-color);
+
+        &::after{
+            opacity: 1;
+        }
     }
+
+    
 
     .contacts {
         display: block;
@@ -79,6 +85,10 @@
     .page-navigation {
     display: flex;
     align-items: center;
+    }
+
+    .contacts__item {
+        margin-bottom: 10px;
     }
 
     .contacts__link {
@@ -126,6 +136,10 @@
     display: flex;
     align-items: center;
     column-gap: 50px;
+    }
+
+    .contacts__item {
+        margin-bottom: 0px;
     }
 
     .page-header__container {

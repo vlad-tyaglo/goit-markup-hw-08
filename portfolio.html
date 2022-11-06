@@ -27,7 +27,7 @@
           </svg>
         </button>
         <ul class="contacts">
-              <li>
+              <li class="contacts__item">
                 <a class="contacts__link" href="mailto:info@devstudio.com"> 
                   <svg class="contacts__icon mail_size">
                     <use href="./images/icons.svg#icon-mail"></use>
@@ -50,17 +50,21 @@
       </button>
       <ul class="mobile-nav">
         <li><a class="mobile-nav__link" href="./index.html">Студія</a></li>
-        <li><a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="mobile-nav__link mobile-nav__link_active" href="./portfolio.html">Портфоліо</a></li>
         <li><a class="mobile-nav__link" href="">Контакти</a></li>
       </ul>
-          <a class="mobile-menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
-          <a class="mobile-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <ul class="mobile-social">
-        <li><a class="mobile-social__link" href="">Instagram</a></li>
-        <li><a class="mobile-social__link" href="">Twitter</a></li>
-        <li><a class="mobile-social__link" href="">Facebook</a></li>
-        <li><a class="mobile-social__link" href="">LinkedIn</a></li>
-      </ul>
+      <div>
+        <ul class="mobile-contacts">
+          <li><a class="mobile-contacts__tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li><a class="mobile-contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul> 
+        <ul class="mobile-social">
+          <li><a class="mobile-social__link" href="">Instagram</a></li>
+          <li><a class="mobile-social__link" href="">Twitter</a></li>
+          <li><a class="mobile-social__link" href="">Facebook</a></li>
+          <li><a class="mobile-social__link" href="">LinkedIn</a></li>
+        </ul>
+      </div>
       </div>
     </div>
   </header>
@@ -80,7 +84,12 @@
           <li class="project-list-item link">
             <a href="#" class="project-list-link">
               <div class="project-list-wrapper">
-                <img srcset="./images/tech@2x.jpg 2x" src="./images/tech.jpg" alt="Технокряк" width="370">
+                <picture>
+                  <source srcset="./images/tech-mobile.jpg 1x, ./images/tech-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/tech-desktop.jpg 1x, ./images/tech-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  <source srcset="./images/tech-tablet.jpg 1x, ./images/tech-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                  <img src="#" alt="Технокряк">
+                </picture>
                 <p class="project-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="project-container">
@@ -92,7 +101,12 @@
           <li class="project-list-item">
             <a href="#" class="project-list-link">
               <div class="project-list-wrapper">
-                <img srcset="./images/poster@2x.jpg 2x" src="./images/poster.jpg" alt="Постер" width="370">
+                <picture>
+                  <source srcset="./images/poster-mobile.jpg 1x, ./images/poster-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/poster-desktop.jpg 1x, ./images/poster-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  <source srcset="./images/poster-tablet.jpg 1x, ./images/poster-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                  <img src="#" alt="Постер">
+                </picture>
                 <p class="project-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="project-container">
@@ -104,7 +118,12 @@
           <li class="project-list-item">
             <a href="#" class="project-list-link">
               <div class="project-list-wrapper">
-                <img srcset="./images/restoran@2x.jpg 2x" src="./images/restoran.jpg" alt="Ресторан" width="370">
+                <picture>
+                  <source srcset="./images/restoran-mobile.jpg 1x, ./images/restoran-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/restoran-desktop.jpg 1x, ./images/restoran-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  <source srcset="./images/restoran-tablet.jpg 1x, ./images/restoran-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                  <img src="./images/restoran.jpg" alt="Ресторан">
+                </picture>
                 <p class="project-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="project-container">
@@ -116,7 +135,12 @@
           <li class="project-list-item">
             <a href="#" class="project-list-link">
               <div class="project-list-wrapper">
-                <img srcset="./images/prime@2x.jpg 2x" src="./images/prime.jpg" alt="Навушники" width="370">
+                <picture>
+                  <source srcset="./images/prime-mobile.jpg 1x, ./images/prime-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/prime-desktop.jpg 1x, ./images/prime-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  <source srcset="./images/prime-tablet.jpg 1x, ./images/prime-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                  <img src="./images/prime.jpg" alt="Навушники">
+                </picture>
                 <p class="project-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="project-container">
@@ -128,7 +152,12 @@
           <li class="project-list-item">
             <a href="#" class="project-list-link">
               <div class="project-list-wrapper">
-                <img srcset="./images/boxes@2x.jpg 2x" src="./images/boxes.jpg" alt="Коробка" width="370">
+                <picture>
+                  <source srcset="./images/boxes-mobile.jpg 1x, ./images/boxes-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/boxes-desktop.jpg 1x, ./images/boxes-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  <source srcset="./images/boxes-tablet.jpg 1x, ./images/boxes-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                  <img src="#" alt="Коробка">
+                </picture>
                 <p class="project-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="project-container">
@@ -140,7 +169,12 @@
           <li class="project-list-item">
             <a href="#" class="project-list-link">
               <div class="project-list-wrapper">
-                <img srcset="./images/inspiration@2x.jpg 2x" src="./images/inspiration.jpg" alt="Монітор" width="370">
+                <picture>
+                  <source srcset="./images/inspiration-mobile.jpg 1x, ./images/inspiration-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/inspiration-desktop.jpg 1x, ./images/inspiration-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  <source srcset="./images/inspiration-tablet.jpg 1x, ./images/inspiration-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                  <img src="./images/inspiration.jpg" alt="Монітор">
+                </picture>
                 <p class="project-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="project-container">
@@ -152,7 +186,12 @@
             <li class="project-list-item">
               <a href="#" class="project-list-link">
                 <div class="project-list-wrapper">
-                  <img srcset="./images/edition@2x.jpg 2x" src="./images/edition.jpg" alt="Видання" width="370">
+                  <picture>
+                    <source srcset="./images/edition-mobile.jpg 1x, ./images/edition-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                    <source srcset="./images/edition-desktop.jpg 1x, ./images/edition-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/edition-tablet.jpg 1x, ./images/edition-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <img src="./images/edition.jpg" alt="Видання">
+                  </picture>
                   <p class="project-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
             <div class="project-container">
@@ -164,7 +203,12 @@
           <li class="project-list-item">
             <a href="#" class="project-list-link">
               <div class="project-list-wrapper">
-                <img srcset="./images/lab@2x.jpg 2x" src="./images/lab.jpg" alt="Проєкт" width="370">
+                <picture>
+                  <source srcset="./images/lab-mobile.jpg 1x, ./images/lab-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/lab-desktop.jpg 1x, ./images/lab-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  <source srcset="./images/lab-tablet.jpg 1x, ./images/lab-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                  <img src="./images/lab.jpg" alt="Проєкт">
+                </picture>
                 <p class="project-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="project-container">
@@ -176,7 +220,12 @@
           <li class="project-list-item">
             <a href="#" class="project-list-link">
               <div class="project-list-wrapper">
-                <img srcset="./images/growing@2x.jpg 2x" src="./images/growing.jpg" alt="Ноутбук" width="370">
+                <picture>
+                  <source srcset="./images/growing-mobile.jpg 1x, ./images/growing-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <source srcset="./images/growing-desktop.jpg 1x, ./images/growing-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  <source srcset="./images/growing-tablet.jpg 1x, ./images/growing-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                  <img src="#" alt="Ноутбук">
+                </picture>
                 <p class="project-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             <div class="project-container">

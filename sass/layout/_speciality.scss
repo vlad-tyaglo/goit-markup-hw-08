@@ -32,6 +32,9 @@
     line-height: 1.71;
     color: var(--paragraph-text-color);
     letter-spacing: 0.03em;
+}
+
+.specialty-list__item {
     margin-bottom: 30px;
 }
 
@@ -46,7 +49,7 @@
     }
 
     .specialty-list__item {
-        width: 354px;
+        width: calc((100% - 1 * 30px) / 2);
     }
 
     .specialty-list__title {
